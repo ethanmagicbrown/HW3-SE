@@ -1,4 +1,4 @@
-
+//Ethan Brown
 $(document).ready(function() {
 	$(".dropdown-content a").on("click", function(event) {
 	    event.preventDefault(); // Stop page from jumping
