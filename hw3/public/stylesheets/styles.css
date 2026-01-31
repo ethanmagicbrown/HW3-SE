@@ -1,0 +1,62 @@
+body {
+  background-color: cyan;
+}
+.highlight-box {
+  background-color: orange; 
+  padding: 30px;
+  font-family: "ComicSans"
+}
+h1 {
+  color: red;
+  text-align: left;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+<!-- Ethan Brown -->
+
+/* make the header and dropdown a block together */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/* the month in the header (Jan, Apr, etc.) */
+#selected-month {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 2px 8px;
+  background-color: #f9f9f9; 
+}
+
+/* The actual menu */
+.dropdown-content {
+  display: none; /* hides until hoverd over */
+  position: absolute;
+  min-width: 100px;
+  max-height: 120px; /* Forces vertical scrollbar */
+  overflow-y: auto;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: #add8e6;
+}
+
+
+/* Show the menu when hovering over the container */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

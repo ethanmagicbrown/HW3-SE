@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Ethan Brown -->
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+<script
+ src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>Cheesecake Order Form</h1>
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/1280px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg width="250" height="250">
+<div id="order-container">
+  <form id="cheesecake-form">
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" name="quantity" value="3" min="1" max="10">
+
+    <p>Topping</p>
+    <div>
+      <input type="radio" id="plain" name="topping" value="plain" checked>
+      <label for="plain">Plain</label>
+    </div>
+    <div>
+      <input type="radio" id="cherry" name="topping" value="cherry">
+      <label for="cherry">Cherry</label>
+    </div>
+    <div>
+      <input type="radio" id="chocolate" name="topping" value="chocolate">
+      <label for="chocolate">Chocolate</label>
+    </div>
+
+    <br>
+    <label for="notes">Notes:</label><br>
+    <textarea id="notes" name="notes" rows="4" cols="30"></textarea>
+    <br><br>
+    <button type="submit" id="order-button">Order Now</button>
+  </form>
+</div>
+<h3>Orders for 
+  <div class="dropdown">
+    <span id="selected-month">Jan</span>
+    <div class="dropdown-content">
+      <a href="#">Jan</a>
+      <a href="#">Feb</a>
+      <a href="#">Mar</a>
+      <a href="#">Apr</a>
+      <a href="#">May</a>
+      <a href="#">Jun</a>
+      <a href="#">Jul</a>
+      <a href="#">Aug</a>
+      <a href="#">Sep</a>
+      <a href="#">Oct</a>
+      <a href="#">Nov</a>
+      <a href="#">Dec</a>
+    </div>
+  </div>
+</h3>
+<ul>
+  <li>11 cherry</li>
+  <li>17 chocolate</li>
+  <li>31 plain</li>
+</ul>
+<script src = "javascripts/Document.js">
+</script>
+</body>
+</html>
